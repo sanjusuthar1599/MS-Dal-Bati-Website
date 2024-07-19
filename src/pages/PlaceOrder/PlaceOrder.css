@@ -1,0 +1,48 @@
+/* PlaceOrder.css */
+
+.place-order-left {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes full width within its container */
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .multi-fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input[type='text'] {
+    width: calc(50% - 5px); /* Adjust width for multi-fields */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+  }
+  
+  input[type='text']::placeholder {
+    color: #aaa;
+  } 
+  
+  input[type='text']:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  
+  input[type='text']:not(.multi-fields input[type='text']) {
+    width: 100%; /* Full width for single fields */
+  }
+  
